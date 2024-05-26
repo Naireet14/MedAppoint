@@ -1,0 +1,143 @@
+
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Half-Portion {
+  width: 50%;
+  height: 100vh;
+  order: 1; 
+  background-color:#1434A4 ;/* Display the Half-Portion on the left */
+}
+.half-portion-title {
+  color: white;
+  font-size: 3.7rem;
+  text-align: center;
+  padding-top: 30vh; /* Adjust the padding to vertically center the text */
+}
+.half-para{
+  color:white;
+  text-align:center;
+  font-size:1.2rem;
+}
+
+//Animation
+
+/*antd override*/
+
+/*common styling*/
+
+.card-title{
+  font-size:1.3rem !important;
+  font-weight:bold!important;
+}
+.normal-text{
+  font-size:1rem;
+}
+.card{
+  box-shadow: 0 0 2px gray;
+ 
+  border-bottom-left-radius:20px !important;
+  border-top-right-radius:20px !important;
+ 
+}
+Button{
+  display:inline-flex !important;
+  align-items:center!important;
+  justify-content:center !important;
+}
+.primary-button{
+  background-color:#000080 !important;
+  border-color:#000080 !important;
+  color:white !important;
+  height:30px !important;
+  width:30% !important;
+  font-size:15px !important;
+  font-weight:600;
+
+}
+
+.primary-button:hover{
+  background-color:#0047AB !important;
+  border-color:gray!important;
+  color:white !important;
+  height:30px !important;
+  width:35% !important;
+}
+.para{
+  font-size:15px !important;
+ color:black!important;
+}
+
+.anchor{
+  color:#1F51FF!important;
+  text-decoration:underline;
+  font-size:15px !important;
+  cursor:pointer;
+}
+.anchor:hover{
+  color:#750000!important;
+  text-decoration:underline;
+  font-size:15px !important;
+}
+Input{
+  padding:2px !important;
+  font-size:14px !important;
+ 
+}
+label{
+  font-size:15px !important;
+  color:black !important;
+
+}
+.ant-form-item{
+  margin:10px 0 !important;
+}
+
+.authentication {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 2; /* Display the Authentication section on the right */
+}
+
+.authentication-form{
+  height:600px !important;
+  width:350px !important;
+  padding:30px !important;
+  
+}
+.authentication .card-title{
+  font-size:1.5rem;
+  font-weight:bold;
+  background-color:#191970;
+  color:white!important;
+  max-width:max-content!important;
+  padding:14px 30px;
+  margin-left:-50px;
+  border-bottom-left-radius:10px;
+  border-top-right-radius:10px;
+}
+@media (max-width: 576px) {
+  .Container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .Half-Portion {
+    width: 100%;
+    height:20vh;
+    padding-bottom:60vh; /* Adjust the height as needed */
+    order: 1; /* Display the Half-Portion above the Authentication section */
+  }
+
+  .authentication {
+    width: 100%;
+    padding: 20px; /* Add padding for better spacing */
+    order: 2; /* Display the Authentication section below the Half-Portion */
+  }
+}

@@ -1,0 +1,122 @@
+
+.main{
+    padding:20px;
+}
+.sidebar{
+    background-color:#00308F;
+    border-radius:5px;
+    box-shadow:0 0 2px gray;
+    margin-right:20px;
+    min-height:100%;
+    padding:10px;
+   
+}
+.Profile-image{
+    border-radius: 50%;
+    width:200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid rgb(63, 63, 146);
+}
+
+.content{
+    width:100%;
+    height:100%;
+}
+
+.header{
+    background-color:white;
+    border-radius:5px;
+    box-shadow:0 0 2px gray;
+    margin-bottom:20px;
+    height:10vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    color:white;
+    font-weight:bold;
+}
+.role{
+    color:white;
+    font-size:14px;
+    
+}
+.header-action-icon{
+    font-size:30px;
+    color:#002D62 !important;
+    cursor:pointer;
+    padding-left:10px;
+}
+.body{
+    background-color:white;
+    border-radius:5px;
+    box-shadow:0 0 2px gray;
+    height:100vh;
+    width:100%;
+    padding:15px;
+}
+.menu{
+    margin-top:100px;
+    padding:0 10px;
+}
+.menu-item{
+    margin-top:30px;
+    
+}
+.menu-item a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    padding:0 10px;
+}
+.menu-item i{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    margin:0 15px;
+}
+.active-menu-item{
+    color:white;
+    background-color:#191970;
+    padding:5px;
+    border-radius:5px;
+}
+.btn{
+    margin-left:15px;
+    background-color:#191970!important;
+    border-radius:10px!important;
+    color:white!important;
+}
+.btncheck{
+    background-color:#191970!important;
+    border-radius:10px!important;
+    color:white!important;
+    padding:20px;
+}
+.btncheck:hover{
+    background-color:#2a52be!important;
+
+}
+.anch{
+    color:white !important;
+    text-decoration:none!important;
+}
+.anch:hover{
+    color:white !important;
+    text-decoration:none!important;
+}
+.btn:hover{
+    background-color:#2a52be!important;
+
+}
+
+@media screen and (max-width:768px){
+    .menu{
+        padding:0 5px;
+    }
+   .body{
+    height: 170vh;
+   }
+}
